@@ -7,7 +7,7 @@ text-autospace.js
 
 ## 小白请注意
 
-除了引入本js，你还需要引入jquerry.js
+除了引入本js，你还需要引入jquery.js
 ```
 <script src='https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js'/>
 ```
