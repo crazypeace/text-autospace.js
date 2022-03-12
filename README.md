@@ -3,7 +3,14 @@ text-autospace.js
 
 自动在中英文间添加空白符，优化中文排版。
 
-使用方法及演示参考[demo](http://mastermay.github.io/text-autospace.js/)
+使用方法及演示参考[demo](http://crazypeace.github.io/text-autospace.js/)
+
+## 小白请注意
+
+除了引入本js，你还需要引入jquerry.js
+```
+<script src='https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js'/>
+```
 
 ## fork 后修改了啥?
 
