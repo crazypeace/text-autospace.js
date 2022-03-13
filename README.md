@@ -13,7 +13,7 @@ text-autospace.js
 <script src='https://crazypeace.github.io/text-autospace.js/text-autospace.min.js'/>
 ```
 
-在<html>中添加 class="han-la"
+在`<html>`中添加`class="han-la"`
 ```
 <html class="han-la">
 ```
