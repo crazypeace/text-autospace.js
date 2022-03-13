@@ -5,19 +5,44 @@ text-autospace.js
 
 使用方法及演示参考[demo](http://crazypeace.github.io/text-autospace.js/)
 
-## 小白请注意
+## 面对小白的使用说明
 
-除了引入本js，你还需要引入jquery.js
+除了引入本js，你还需要引入jquery.js，所以你需要引入
 ```
 <script src='https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js'/>
+<script src='https://crazypeace.github.io/text-autospace.js/text-autospace.min.js'/>
 ```
 
-## fork 后修改了啥?
+在<html>中添加 class="han-la"
+```
+<html class="han-la">
+```
+  
+添加CSS
+```
+html.han-la hanla:after {
+	content: " ";
+	display: inline;
+	font-family: Arial;
+	font-size: 0.89em;
+}
 
-主要是修复 bug. 
+html.han-la code hanla,
+html.han-la pre hanla,
+html.han-la kbd hanla,
+html.han-la samp hanla {
+	display: none;
+}
 
-- 原版本不能正确处理右定界符, 且错误地划分了 `,.?!` 等符号的类型. 
-- 去掉了英文单双引号. 因为难以简单辨别它们是左定界符还是右定界符.
-- 改 `$(document).on("ready"...)` 为 `$(document).ready(...)`. 
+html.han-la ol > hanla,
+html.han-la ul > hanla {
+	display: none;
+}
+```
 
-简单的样例可参考[这里](https://tools.beardic.cn/test/).
+如果你希望增加不应用此js的区域，比如blockquote，请添加
+```
+html.han-la blockquote hanla {
+	display: none;
+}
+```
