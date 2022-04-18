@@ -47,4 +47,4 @@ html.han-la blockquote hanla {
 }
 ```
 
-## 请用你的Star告诉我你觉得有用 :) 
+## 用你的STAR告诉我这个Repo对你有用 Welcome STARs! :)
