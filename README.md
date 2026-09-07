@@ -13,36 +13,42 @@ text-autospace.js
 <script src='https://crazypeace.github.io/text-autospace.js/text-autospace.min.js'/>
 ```
 
-在`<html>`中添加`class="han-la"`
+在你需要处理的HTML元素中添加`class="han-la"`
+如`<html>`
 ```
 <html class="han-la">
 ```
-  
+
+或
+```
+<div class='han-la'>
+```
+
 添加CSS
 ```
-html.han-la hanla:after {
+.han-la hanla:after {
 	content: " ";
 	display: inline;
 	font-family: Arial;
 	font-size: 0.89em;
 }
 
-html.han-la code hanla,
-html.han-la pre hanla,
-html.han-la kbd hanla,
-html.han-la samp hanla {
+.han-la code hanla,
+.han-la pre hanla,
+.han-la kbd hanla,
+.han-la samp hanla {
 	display: none;
 }
 
-html.han-la ol > hanla,
-html.han-la ul > hanla {
+.han-la ol > hanla,
+.han-la ul > hanla {
 	display: none;
 }
 ```
 
 如果你希望增加不应用此js的区域，比如blockquote，请添加
 ```
-html.han-la blockquote hanla {
+.han-la blockquote hanla {
 	display: none;
 }
 ```
