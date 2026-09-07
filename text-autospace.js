@@ -7,6 +7,12 @@
         return (
           name !== "style" &&
           name !== "script" &&
+          name !== "h1" &&
+          name !== "h2" &&
+          name !== "h3" &&
+          name !== "h4" &&
+          name !== "h5" &&
+          name !== "h6" &&
           (!cls || cls.indexOf("han-js-charized") < 0)
         );
       };
