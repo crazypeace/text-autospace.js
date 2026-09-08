@@ -41,7 +41,8 @@ text-autospace.js
 }
 
 .han-la ol > hanla,
-.han-la ul > hanla {
+.han-la ul > hanla,
+.han-la tr > hanla {
 	display: none;
 }
 ```
